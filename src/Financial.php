@@ -1,0 +1,423 @@
+<?php
+
+class Financial
+{
+    /**
+     * Calculates the accrued interest of a security that has periodic payments.
+     */
+    public static function accrInt($issue, $firstPayment, $settlement, $rate, $redemption, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the accrued interest of a security that pays interest at maturity.
+     */
+    public static function accruedIntM($issue, $maturity, $rate, $redemption, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Returns the depreciation for an accounting period, or the prorated depreciation if the asset was purchased in 
+     * the middle of a period..
+     */
+    public static function amorlinc($cost, $purchaseDate, $firstPeriodEnd, $salvage, $period, $rate, $basis)
+    {
+
+    }
+
+    /**
+     * Calculates the number of days from the first coupon, or interest payment, until settlement.
+     */
+    public static function coupDayBs($settlement, $maturity, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the number of days in the coupon, or interest payment, period that contains the specified 
+     * settlement date.
+     */
+    public static function coupDayS($settlement, $maturity, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the number of days from the settlement date until the next coupon, or interest payment.
+     */
+    public static function coupDaySNC($settlement, $maturity, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates next coupon, or interest payment, date after the settlement date.
+     */
+    public static function coupNCD($settlement, $maturity, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the number of coupons, or interest payments, between the settlement date and the maturity
+     * date of the investment.
+     */
+    public static function coupNum($settlement, $maturity, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates last coupon, or interest payment, date before the settlement date.
+     */
+    public static function coupPCD($settlement, $maturity, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the cumulative interest over a range of payment periods for an investment based on constant-amount
+     * periodic payments and a constant interest rate.
+     */
+    public static function cumIPmt($rate, $numberOfPeriods, $presentValue, $firstPeriod, $lastPeriod, $endOrBeginning)
+    {
+
+    }
+
+    /**
+     * Calculates the cumulative principal paid over a range of payment periods for an investment based on
+     * constant-amount periodic payments and a constant interest rate.
+     */
+    public static function cumPrinc($rate, $numberOfPeriods, $presentValue, $firstPeriod, $lastPeriod, $endOrBeginning)
+    {
+
+    }
+
+    /**
+     * Calculates the depreciation of an asset for a specified period using the arithmetic declining balance method.
+     */
+    public static function db($cost, $salvage, $life, $period, $month)
+    {
+
+    }
+
+    /**
+     * Calculates the depreciation of an asset for a specified period using the double-declining balance method.
+     */
+    public static function ddb($cost, $salvage, $life, $period, $factor)
+    {
+
+    }
+
+    /**
+     * Calculates the discount rate of a security based on price.
+     */
+    public static function disc($settlement, $maturity, $price, $redemption, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Converts a price quotation given as a decimal fraction into a decimal value.
+     */
+    public static function dollarde($fractionalPrice, $unit)
+    {
+
+    }
+
+    /**
+     * Converts a price quotation given as a decimal value into a decimal fraction.
+     */
+    public static function dollarfr($decimalPrice, $unit)
+    {
+
+    }
+
+    /**
+     * Calculates the number of compounding periods required for an investment of a specified present value
+     * appreciating at a given rate to reach a target value.
+     */
+    public static function duration($settlement, $maturity, $rate, $yield, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the annual effective interest rate given the nominal rate and number of compounding periods per year.
+     */
+    public static function effect($nominalRate, $periodsPerYear)
+    {
+
+    }
+
+    /**
+     * Calculates the future value of an annuity investment based on constant-amount periodic payments and a constant
+     * interest rate.
+     */
+    public static function fv($rate, $numberOfPeriods, $paymentAmount, $presentValue, $endOrBeginning)
+    {
+
+    }
+
+    /**
+     * Calculates the future value of some principal based on a specified series of potentially varying interest rates.
+     */
+    public static function fvschedule($principal, $rateSchedule)
+    {
+
+    }
+
+    /**
+     * Calculates the effective interest rate generated when an investment is purchased at one price and sold at
+     * another with no interest or dividends generated by the investment itself.
+     */
+    public static function intrate($buyDate, $sellDate, $buyPrice, $sellPrice, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the payment on interest for an investment based on constant-amount periodic payments and a constant
+     * interest rate.
+     */
+    public static function ipmt($rate, $period, $numberOfPeriods, $presentValue, $futureValue, $endOrBeginning)
+    {
+
+    }
+
+    /**
+     * Calculates the internal rate of return on an investment based on a series of periodic cash flows.
+     */
+    public static function irr($cashflowAmounts, $rateGuess)
+    {
+
+    }
+
+    /**
+     * The ISPMT function calculates the interest paid during a particular period of an investment..
+     */
+    public static function ispmt($rate, $period, $numberOfPeriods, $presentValue)
+    {
+
+    }
+
+    /**
+     * Calculates the modified Macaulay duration of a security paying periodic interest, such as a US Treasury Bond,
+     * based on expected yield.
+     */
+    public static function mduration($settlement, $maturity, $rate, $yield, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the modified internal rate of return on an investment based on a series of periodic cash flows and
+     * the difference between the interest rate paid on financing versus the return received on reinvested income.
+     */
+    public static function mirr($cashflowAmounts, $financingRate, $reinvestmentReturnRate)
+    {
+
+    }
+
+    /**
+     * Calculates the annual nominal interest rate given the effective rate and number of compounding periods per year.
+     */
+    public static function nominal($effectiveRate, $periodsPerYear)
+    {
+
+    }
+
+    /**
+     * Calculates the number of payment periods for an investment based on constant-amount periodic payments and a
+     * constant interest rate.
+     */
+    public static function nper($rate, $paymentAmount, $presentValue, $futureValue, $endOrBeginning)
+    {
+
+    }
+
+    /**
+     * Calculates the net present value of an investment based on a series of periodic cash flows and a discount rate.
+     */
+    public static function npv($discount, $cashflow1, ...$cashflow2)
+    {
+
+    }
+
+    /**
+     * Returns the number of periods for an investment to reach a specific value at a given rate..
+     */
+    public static function pduration($rate, $presentValue, $futureValue)
+    {
+
+    }
+
+    /**
+     * Calculates the periodic payment for an annuity investment based on constant-amount periodic payments and a
+     * constant interest rate.
+     */
+    public static function pmt($rate, $numberOfPeriods, $presentValue, $futureValue, $endOrBeginning)
+    {
+
+    }
+
+    /**
+     * Calculates the payment on the principal of an investment based on constant-amount periodic payments and a
+     * constant interest rate.
+     */
+    public static function ppmt($rate, $period, $numberOfPeriods, $presentValue, $futureValue, $endOrBeginning)
+    {
+
+    }
+
+    /**
+     * Calculates the price of a security paying periodic interest, such as a US Treasury Bond, based on expected yield.
+     */
+    public static function price($settlement, $maturity, $rate, $yield, $redemption, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the price of a discount (non-interest-bearing) security, based on expected yield.
+     */
+    public static function pricedisc($settlement, $maturity, $discount, $redemption, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the price of a security paying interest at maturity, based on expected yield.
+     */
+    public static function pricemat($settlement, $maturity, $issue, $rate, $yield, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the present value of an annuity investment based on constant-amount periodic payments and a constant
+     * interest rate.
+     */
+    public static function pv($rate, $numberOfPeriods, $paymentAmount, $futureValue, $endOrBeginning)
+    {
+
+    }
+
+    /**
+     * Calculates the interest rate of an annuity investment based on constant-amount periodic payments and the
+     * assumption of a constant interest rate.
+     */
+    public static function rate($numberOfPeriods, $paymentPerPeriod, $presentValue, $futureValue, $endOrBeginning, $rateGuess)
+    {
+
+    }
+
+    /**
+     * Calculates the amount received at maturity for an investment in fixed-income securities purchased on a
+     * given date.
+     */
+    public static function received($settlement, $maturity, $investment, $discount, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Returns the interest rate needed for an investment to reach a specific value within a given number of periods.
+     */
+    public static function rri($numberOfPeriods, $presentValue, $futureValue)
+    {
+
+    }
+
+    /**
+     * Calculates the depreciation of an asset for one period using the straight-line method.
+     */
+    public static function sln($cost, $salvage, $life)
+    {
+
+    }
+
+    /**
+     * Calculates the depreciation of an asset for a specified period using the sum of years digits method.
+     */
+    public static function syd($cost, $salvage, $life, $period)
+    {
+
+    }
+
+    /**
+     * Calculates the equivalent annualized rate of return of a US Treasury Bill based on discount rate.
+     */
+    public static function tbilleq($settlement, $maturity, $discount)
+    {
+
+    }
+
+    /**
+     * Calculates the price of a US Treasury Bill based on discount rate.
+     */
+    public static function tbillprice($settlement, $maturity, $discount)
+    {
+
+    }
+
+    /**
+     * Calculates the yield of a US Treasury Bill based on price.
+     */
+    public static function tbillyield($settlement, $maturity, $price)
+    {
+
+    }
+
+    /**
+     * Returns the depreciation of an asset for a particular period (or partial period)..
+     */
+    public static function vdb($cost, $salvage, $life, $startPeriod, $endPeriod, $factor, $noSwitch)
+    {
+
+    }
+
+    /**
+     * Calculates the internal rate of return of an investment based on a specified series of potentially irregularly
+     * spaced cash flows.
+     */
+    public static function xirr($cashflowAmounts, $cashflowDates, $rateGuess)
+    {
+
+    }
+
+    /**
+     * Calculates the net present value of an investment based on a specified series of potentially irregularly spaced
+     * cash flows and a discount rate.
+     */
+    public static function xnpv($discount, $cashflowAmounts, $cashflowDates)
+    {
+
+    }
+
+    /**
+     * Calculates the annual yield of a security paying periodic interest, such as a US Treasury Bond, based on price.
+     */
+    public static function annualYield($settlement, $maturity, $rate, $price, $redemption, $frequency, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the annual yield of a discount (non-interest-bearing) security, based on price.
+     */
+    public static function yielddisc($settlement, $maturity, $price, $redemption, $dayCountConvention)
+    {
+
+    }
+
+    /**
+     * Calculates the annual yield of a security paying interest at maturity, based on price.
+     */
+    public static function yieldmat($settlement, $maturity, $issue, $rate, $price, $dayCountConvention)
+    {
+
+    }
+}

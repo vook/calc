@@ -1,0 +1,32 @@
+{
+  "name": "vook/php-fitbank",
+  "description": "Calculation library as equal to those available on google Calc",
+  "keywords": [
+    "laravel",
+    "lumen",
+    "fitbank",
+    "webservice",
+    "payments"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jhony Mota",
+      "email": "jhonymota@hotmail.com"
+    },
+    {
+      "name": "Pedro Zillig",
+      "email": "srzillig@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">= 7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Calc\\": "src/"
+    }
+  }
+}
